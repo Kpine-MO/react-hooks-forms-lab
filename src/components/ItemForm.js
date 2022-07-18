@@ -25,12 +25,13 @@ console.log(itemCategory)
 
 function handleSubmit(event){
   event.preventDefault();
+  
   newItem = {
     id: uuid(), // the `uuid` library can be used to generate a unique id
     name: itemName,
     category: itemCategory,
   };
-  onItemFormSubmit(newItem);
+  onItemFormSubmit(newItem)
 }
 
 
